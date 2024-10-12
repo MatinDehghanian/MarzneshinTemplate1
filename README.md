@@ -29,7 +29,7 @@ sudo wget -N -P -O /var/lib/marzneshin/templates/subscription/  https://raw.gith
 
 2. دستورات زیر رو تو ترمینال سرورتون بزنید:
 ```sh
-echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzneshin/templates/"' | sudo tee -a /opt/marzban/.env
+echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzneshin/templates/"' | sudo tee -a /etc/opt/marzneshin/.env
 echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /etc/opt/marzneshin/.env
 ```
 یا مقادیر زیر رو در فایل `.env` در پوشه `/etc/opt/marzneshin/` با پاک کردن # اول آنها از حالت کامنت در بیارید.
@@ -106,7 +106,7 @@ sudo wget -N -P -O /var/lib/marzneshin/templates/subscription/  https://raw.gith
 
 2. Enter the following commands in your server's terminal:
 ```sh
-echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzneshin/templates/"' | sudo tee -a /opt/marzneshin/.env
+echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzneshin/templates/"' | sudo tee -a /etc/opt/marzneshin/.env
 echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /etc/opt/marzneshin/.env
 ```
 Or uncomment the following values in `.env` file in `/opt/marzneshin` folder by removing # at the begining of them.
